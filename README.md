@@ -26,7 +26,7 @@ The deployment script was coded using Python 3.6.6 (go.py)
 `The script will:`
 - Download image resources file from AWS S3 (https://s3.eu-central-1.amazonaws.com/devops-exercise/pandapics.tar.gz) and extract it's content to '/public/images'.
 - Create, build & run the App + DB using “docker-compose build” & “docker-compose up” command.
-- Check the App's health at the end of the deployment flow and will terminate itself and the containers upon anyuthing other than HTTP response code 200.
+- Check the App's health at the end of the deployment flow and will terminate itself and the containers upon anything other than HTTP response code 200.
 
 ## Instructions
 - For simplicity sake, all you have to do to run it is clone this repository using git clone
@@ -127,8 +127,7 @@ Checking health response code...
 Success!, response code is  200
 ```
 Receiving the output above means the deployment was successful and the app and db containers will continue working in background.
-`if encountering ssl.SSLError: [SSL: CERTIFICATE_VERIFY_FAILED] or urllib.error.URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] pase the following code at the end of the import statements in go.py`
+`if encountering ssl.SSLError: [SSL: CERTIFICATE_VERIFY_FAILED] or urllib.error.URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] paste the following code at the end of the import statements in go.py`
 
-`import ssl
-
-ssl._create_default_https_context = ssl._create_unverified_context`
+import ssl
+ssl._create_default_https_context = ssl._create_unverified_context
