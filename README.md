@@ -20,7 +20,8 @@ Ops Task @BigPanda
 ```
 
 The deployment script was coded using Python 3.6.6 (go.py)
-####`The script will:`
+
+`The script will:`
 - Download image resources file from AWS S3 (https://s3.eu-central-1.amazonaws.com/devops-exercise/pandapics.tar.gz) and extract it's content to '/public/images'.
 - Create, build & run the App + DB using “docker-compose build” & “docker-compose up” command.
 - Check the App's health at the end of the deployment flow and will terminate itself and the containers upon anyuthing other than HTTP response code 200.
