@@ -127,3 +127,8 @@ Checking health response code...
 Success!, response code is  200
 ```
 Receiving the output above means the deployment was successful and the app and db containers will continue working in background.
+`if encountering ssl.SSLError: [SSL: CERTIFICATE_VERIFY_FAILED] or urllib.error.URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] pase the following code at the end of the import statements in go.py`
+
+`import ssl
+
+ssl._create_default_https_context = ssl._create_unverified_context`
