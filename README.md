@@ -5,6 +5,8 @@ Ops Task @BigPanda
 ## Pre-requisites
 
 ```bash
+[root@localhost]# sestatus
+                  SELinux status:                 disabled
 [root@localhost]# docker --version
                   Docker version 1.13.1, build 8633870/1.13.1
 [root@localhost]# docker-compose --version
